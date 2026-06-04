@@ -1,7 +1,7 @@
 import "./styles/variables.css";
 import "./styles/global.css";
 
-import { Navbar } from "./components/NavBar/NavBar";
+import { NavBar } from "./components/NavBar/NavBar";
 import { Hero } from "./components/Hero/Hero";
 import { Pillars } from "./components/Pillars/Pillars";
 import { CafeSection } from "./components/CafeSection/CafeSection";
