@@ -1,12 +1,13 @@
 import "./NavBar.css";
 import { Heart, Menu } from "lucide-react";
 import { navLinks } from "../../data/landingData";
+import logoSoyLuz from "../../assets/logos/logo_soy_luz.png";
 
 export const NavBar = () => {
   return (
     <header className="navbar">
       <a href="#inicio" className="navbar__brand">
-        <img src="./src/assets/logos/logo_soy_luz.png" alt="Soy Luz" />
+        <img src={logoSoyLuz} alt="Soy Luz" />
       </a>
 
       <nav className="navbar__links">
