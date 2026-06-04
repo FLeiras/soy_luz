@@ -1,8 +1,8 @@
-import "./Navbar.css";
+import "./NavBar.css";
 import { Heart, Menu } from "lucide-react";
 import { navLinks } from "../../data/landingData";
 
-export const Navbar = () => {
+export const NavBar = () => {
   return (
     <header className="navbar">
       <a href="#inicio" className="navbar__brand">
