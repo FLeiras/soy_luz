@@ -1,11 +1,12 @@
 import "./Footer.css";
 import { Heart, Mail } from "lucide-react";
+import logoSoyLuz from "../../assets/logos/logo_soy_luz.png";
 
 export const Footer = () => {
   return (
     <footer id="contacto" className="footer">
       <div className="footer__brand">
-        <img src="./src/assets/logos/logo_soy_luz.png" alt="Soy Luz" />
+        <img src={logoSoyLuz} alt="Soy Luz" />
       </div>
 
       <div className="footer__content">
