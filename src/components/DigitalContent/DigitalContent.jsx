@@ -23,7 +23,7 @@ export const DigitalContent = () => {
 
       <div className="digital__socials">
         <a
-          href="#"
+          href="https://www.facebook.com/share/17thb92JNo/"
           aria-label="Facebook"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export const DigitalContent = () => {
         </a>
 
         <a
-          href="#"
+          href="https://www.instagram.com/soyluzorg?igsh=cnlrMGpkbW5uOTdq"
           aria-label="Instagram"
           target="_blank"
           rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export const DigitalContent = () => {
         </a>
 
         <a
-          href="#"
+          href="https://youtube.com/@soyluzorg?si=vJLIKNSL_l-nSQy3"
           aria-label="YouTube"
           target="_blank"
           rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export const DigitalContent = () => {
         </a>
 
         <a
-          href="#"
+          href="https://tiktok.com/@soyluzorg"
           aria-label="TikTok"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,4 +60,4 @@ export const DigitalContent = () => {
       </div>
     </section>
   );
-}
+};

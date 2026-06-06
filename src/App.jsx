@@ -10,6 +10,7 @@ import { Impact } from "./components/Impact/Impact";
 import { Partners } from "./components/Partners/Partners";
 import { DigitalContent } from "./components/DigitalContent/DigitalContent";
 import { Footer } from "./components/Footer/Footer";
+import { WhatsAppFloat } from "./components/WhatsAppFloat/WhatsAppFloat";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </section>
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }

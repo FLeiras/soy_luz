@@ -21,9 +21,14 @@ export const Footer = () => {
       </div>
 
       <div className="footer__actions">
-        <a href="mailto:contacto@soyluz.org" className="btn btn-gold">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=contacto@soyluz.org&su=Contacto%20Organizaci%C3%B3n%20Soy%20Luz"
+          className="btn btn-gold"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Mail size={17} />
-          Contactar
+          Email
         </a>
 
         <a href="#alianzas" className="btn btn-outline">
@@ -33,4 +38,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-}
+};
