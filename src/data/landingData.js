@@ -1,25 +1,38 @@
 export const navLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Sobre Nosotros", href: "#nosotros" },
-  { label: "Programas", href: "#programas" },
-  { label: "Alianzas", href: "#alianzas" },
-  { label: "Contacto", href: "#contacto" },
-];
-
-export const pillars = [
-  "Cultura del Perdón",
-  "Convivencia y Respeto",
-  "Conciencia Ambiental",
-  "Educación Vial",
-  "Relaciones Humanas",
-  "Desarrollo Personal",
-];
-
-export const programs = [
-  "Desarrollo Humano",
-  "Educación Vial",
-  "Conciencia Ambiental",
-  "Niños y Jóvenes",
-  "Eventos Comunitarios",
-  "Programas Empresariales",
+  {
+    label: "Inicio",
+    href: "#inicio",
+  },
+  {
+    label: "Quiénes Somos",
+    href: "#quienes-somos",
+  },
+  {
+    label: "Agenda",
+    href: "#agenda",
+  },
+  {
+    label: "Proyectos",
+    href: "#proyectos",
+  },
+  {
+    label: "Galería",
+    href: "#galeria",
+  },
+  {
+    label: "Conferencias",
+    href: "#conferencias",
+  },
+  {
+    label: "Voluntarios",
+    href: "#voluntarios",
+  },
+  {
+    label: "Blog",
+    href: "#blog",
+  },
+  {
+    label: "Contacto",
+    href: "#contacto",
+  },
 ];

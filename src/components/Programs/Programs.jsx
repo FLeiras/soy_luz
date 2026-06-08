@@ -1,5 +1,4 @@
 import "./Programs.css";
-import "./Programs.css";
 
 import desarrolloHumanoImg from "../../assets/images/personal_developer.jpg";
 import educacionVialImg from "../../assets/images/road_education.jpg";

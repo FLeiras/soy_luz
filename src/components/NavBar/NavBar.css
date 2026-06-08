@@ -29,16 +29,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: clamp(14px, 1.8vw, 28px);
   flex: 1;
 }
 
 .navbar__links a {
   color: var(--white);
   text-decoration: none;
-  font-size: 14px;
+  font-size: clamp(12px, 0.9vw, 14px);
   font-weight: 800;
   position: relative;
+  white-space: nowrap;
 }
 
 .navbar__links a:first-child {
@@ -90,7 +91,7 @@
   z-index: 52;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1180px) {
   .navbar {
     padding: 0 6%;
     position: sticky;

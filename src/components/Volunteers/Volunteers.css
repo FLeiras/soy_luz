@@ -1,0 +1,95 @@
+.volunteers {
+  padding: 84px 6%;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(216, 167, 47, 0.16),
+      transparent 34%
+    ),
+    var(--primary);
+  color: var(--white);
+
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.volunteers .section-label {
+  color: var(--gold);
+}
+
+.volunteers__content {
+  max-width: 560px;
+}
+
+.volunteers__content h2 {
+  margin-top: 10px;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.volunteers__content p {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.volunteers__cta {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold);
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 900;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.volunteers__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.volunteers__card {
+  padding: 24px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.volunteers__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--gold);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+}
+
+.volunteers__card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.volunteers__card p {
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .volunteers {
+    grid-template-columns: 1fr;
+    padding: 64px 6%;
+  }
+}

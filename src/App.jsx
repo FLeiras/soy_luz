@@ -12,15 +12,23 @@ import { DigitalContent } from "./components/DigitalContent/DigitalContent";
 import { Footer } from "./components/Footer/Footer";
 import { WhatsAppFloat } from "./components/WhatsAppFloat/WhatsAppFloat";
 
+import { Agenda } from "./components/Agenda/Agenda";
+import { Projects } from "./components/Projects/Projects";
+import { Volunteers } from "./components/Volunteers/Volunteers";
+
 function App() {
   return (
     <div className="site-shell">
       <NavBar />
+
       <main>
         <Hero />
         <Pillars />
-        <CafeSection />
+        <Agenda />
         <Programs />
+        <Projects />
+        <Volunteers />
+        <CafeSection />
         <Impact />
 
         <section className="bottom-grid">
@@ -28,6 +36,7 @@ function App() {
           <DigitalContent />
         </section>
       </main>
+
       <Footer />
       <WhatsAppFloat />
     </div>
