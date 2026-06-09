@@ -26,6 +26,7 @@ body {
   background: #f3f0ea;
   color: var(--text);
   overflow-x: hidden;
+  padding-top: 72px;
 }
 
 a {

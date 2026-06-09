@@ -1,66 +1,109 @@
 import "./Pillars.css";
 import {
   HeartHandshake,
+  Heart,
   Leaf,
-  Car,
   Users,
+  Car,
   Brain,
-  Sparkles,
+  Home,
+  Target,
+  Compass,
+  Eye,
 } from "lucide-react";
 
-const pillars = [
+const principles = [
   {
-    title: "Cultura del Perdón",
-    text: "Promovemos el perdón como herramienta de transformación personal y social.",
     icon: HeartHandshake,
+    text: "El perdón como herramienta de transformación personal y social.",
   },
+  { icon: Heart, text: "La vida en amor y respeto mutuo." },
   {
-    title: "Convivencia y Respeto",
-    text: "Impulsamos buenas prácticas para fortalecer relaciones humanas saludables.",
-    icon: Users,
-  },
-  {
-    title: "Conciencia Ambiental",
-    text: "Fomentamos el cuidado del entorno y de los espacios comunes.",
     icon: Leaf,
+    text: "La conciencia ambiental y el cuidado de los espacios comunes.",
+  },
+  { icon: Users, text: "Las buenas prácticas de convivencia cotidiana." },
+  { icon: Car, text: "La educación vial responsable y humana." },
+  {
+    icon: Home,
+    text: "El fortalecimiento de las relaciones interpersonales y familiares.",
   },
   {
-    title: "Educación Vial",
-    text: "Formamos ciudadanos responsables, conscientes y humanos en la vía.",
-    icon: Car,
-  },
-  {
-    title: "Desarrollo Personal",
-    text: "Creamos espacios para el autoconocimiento y la conciencia colectiva.",
     icon: Brain,
+    text: "El desarrollo del autoconocimiento y la conciencia colectiva.",
+  },
+];
+
+const institutional = [
+  {
+    icon: Target,
+    title: "Objeto Social",
+    text: "Formar ciudadanos con principios y valores sociales, promoviendo el desarrollo humano, la conciencia ciudadana, la cultura del perdón, la vida en amor, la educación vial, el cuidado del medio ambiente y las buenas prácticas de convivencia social, a través de programas educativos, actividades comunitarias, acciones culturales, talleres, eventos y contenidos digitales.",
   },
   {
-    title: "Transformación Social",
-    text: "Convertimos valores en acciones concretas dentro de la comunidad.",
-    icon: Sparkles,
+    icon: Compass,
+    title: "Misión",
+    text: "Desarrollar programas educativos, culturales y sociales enfocados en el fortalecimiento de la conciencia humana, el respeto por la vida, la convivencia pacífica y la participación ciudadana, creando espacios de aprendizaje accesibles para todas las personas, especialmente aquellas con limitaciones económicas.",
+  },
+  {
+    icon: Eye,
+    title: "Visión",
+    text: "Convertirse en una organización referente en Colombia en procesos de transformación humana y convivencia social, mediante iniciativas sostenibles que impacten positivamente comunidades, instituciones educativas, empresas y espacios públicos.",
   },
 ];
 
 export const Pillars = () => {
   return (
-    <section id="nosotros" className="section pillars">
-      <div className="pillars__intro">
+    <section id="quienes-somos" className="about">
+      <div className="about__hero">
         <span className="section-label">Quiénes somos</span>
-        <h2 className="section-title">
-          Una organización para construir una convivencia más humana.
+
+        <h2>
+          Una organización para construir una convivencia más consciente,
+          respetuosa y participativa.
         </h2>
+
         <p>
-          Soy Luz nace para contribuir al desarrollo humano, al fortalecimiento
-          de los valores sociales y a la participación ciudadana consciente en
-          Colombia.
+          La Organización Soy Luz nace con el propósito de contribuir al
+          desarrollo humano, al fortalecimiento de los valores sociales y a la
+          construcción de una convivencia más consciente, respetuosa y
+          participativa dentro de la sociedad colombiana.
         </p>
       </div>
 
-      <div className="pillars__grid">
-        {pillars.map(({ title, text, icon: Icon }) => (
-          <article className="pillars__card" key={title}>
-            <div className="pillars__icon">
-              <Icon size={28} />
+      <div className="about__principles">
+        <div className="about__principles-text">
+          <h3>Ciudadanos comprometidos con valores sociales</h3>
+
+          <p>
+            Nuestra organización tiene como eje principal la formación de
+            ciudadanos comprometidos con:
+          </p>
+        </div>
+
+        <div className="about__principles-grid">
+          {principles.map(({ icon: Icon, text }) => (
+            <article className="about__principle" key={text}>
+              <Icon size={22} />
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+
+      <div className="about__belief">
+        <p>
+          Creemos firmemente que la transformación social comienza desde el
+          interior del ser humano y se fortalece mediante acciones educativas
+          permanentes, accesibles y participativas.
+        </p>
+      </div>
+
+      <div className="about__institutional">
+        {institutional.map(({ icon: Icon, title, text }) => (
+          <article className="about__institutional-card" key={title}>
+            <div>
+              <Icon size={24} />
             </div>
             <h3>{title}</h3>
             <p>{text}</p>
@@ -69,4 +112,4 @@ export const Pillars = () => {
       </div>
     </section>
   );
-}
+};
